@@ -64,6 +64,6 @@ The project aims to develop an image classification Machine Learning Model using
 
 [License](LICENSE)
 
-<br><br>
+<br>
 
 Thank you for taking the time to visit this repository!
