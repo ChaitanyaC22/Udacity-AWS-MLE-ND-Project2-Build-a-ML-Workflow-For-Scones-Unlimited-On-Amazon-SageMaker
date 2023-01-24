@@ -41,9 +41,9 @@ pip install jupyterlab
 The project aims to develop an image classification Machine Learning Model using workflows on Amazon SageMaker, automating various Machine Learning tasks such as Data Preparation, Model Training, Deployment, and Inference with the help of AWS Step Functions and Lambda functions.
 
 Difference AWS Lambda functions draft to build a AWS Step Functions Workflow:<br>
-1. The `serializeImageData` Lambda Function ([zipped script](Lambda%20functions%20-%20python%20scripts/Lambda-1-serializeImageData-code.zip)) takes the address of an image hosted in S3, and returns a serialized JSON object.<br>
-2. The `Image-Classification` Lambda Function ([zipped script](Lambda%20functions%20-%20python%20scripts/Lambda-2-Image-Classification-code.zip)) accepts the JSON object obtained from step 1 and sends it to an endpoint, collecting inferences as a JSON object.<br>
-3. The `Filter Low Confidence Inferences` Lambda Function ([zipped script](Lambda%20functions%20-%20python%20scripts/Lambda-3-Filter-Low-Confidence-Inferences-code.zip)) takes the inference data from step 2, and filters only the images that meet the pre-defined threshold.<br>
+1. The `serializeImageData` Lambda Function ([zipped `lambda_function.py` script](Lambda%20functions%20-%20python%20scripts/Lambda-1-serializeImageData-code.zip)) takes the address of an image hosted in S3, and returns a serialized JSON object.<br>
+2. The `Image-Classification` Lambda Function ([zipped `lambda_function.py` script](Lambda%20functions%20-%20python%20scripts/Lambda-2-Image-Classification-code.zip)) accepts the JSON object obtained from step 1 and sends it to an endpoint, collecting inferences as a JSON object.<br>
+3. The `Filter Low Confidence Inferences` Lambda Function ([zipped `lambda_function.py` script](Lambda%20functions%20-%20python%20scripts/Lambda-3-Filter-Low-Confidence-Inferences-code.zip)) takes the inference data from step 2, and filters only the images that meet the pre-defined threshold.<br>
 
 ## Execution Flow of the Step Function 
 ![Execution-Flow-of-The-Step-Function.PNG](images/Execution-Flow-of-The-Step-Function.PNG)
