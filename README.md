@@ -47,13 +47,13 @@ The project aims to develop an image classification Machine Learning Model using
 
 ### 3.2. Building a State Machine via AWS Step Functions
 
-#### 3.2.1. Execution Flow of the Step Function 
+### 3.2.1. Execution Flow of the Step Function 
 ![Execution-Flow-of-The-Step-Function.PNG](images/Execution-Flow-of-The-Step-Function.PNG)
 
-#### 3.2.2. Step Functions Graph
+### 3.2.2. Step Function Graph
 ![Step Functions Graph](images/step-function-graph.PNG)
 
-#### 3.2.3. Step Function Output
+### 3.2.3. Step Function Output
 ![Step Function Output](images/Step-Function-Workflow-Working-Output-Example-1.PNG)
 
 ## License
