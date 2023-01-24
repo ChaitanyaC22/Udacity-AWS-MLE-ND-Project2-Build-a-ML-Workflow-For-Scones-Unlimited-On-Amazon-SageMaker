@@ -5,13 +5,13 @@ The primary objective of this project was to build and deploy an image classific
 ## Deploy and Monitor a Machine Learning Workflow for Image Classification Using Amazon SageMaker
 ### Source: AWS Machine Learning Engineer Nanodegree Scholarship Program
 
-## Overview
+## 1. Overview
 
 This project was a part of the project assessment in the **'AWS x Udacity's Machine Learning Engineer Nanodegree Scholarship Program'**.
 
-## Getting Started
+## 2. Getting Started
 
-### Project files related information:
+### 2.1. Project files related information:
 
 **1. `Project2_Build-a-ML-Workflow-For-Scones-Unlimited-On-Amazon-SageMaker.ipynb`:** Jupyter notebook showcases a machine learning working workflow for Image Classification. This includes the necessary preprocessing of the scones unlimited image dataser, model training, deployment and monitor using Amazon SageMaker and other associated AWS Services.<br><br>
 **2. `Project2_Build-a-ML-Workflow-For-Scones-Unlimited-On-Amazon-SageMaker.html`:** Web-page displaying 'Project2_Build-a-ML-Workflow-For-Scones-Unlimited-On-Amazon-SageMaker.ipynb'<br><br>
@@ -19,14 +19,14 @@ This project was a part of the project assessment in the **'AWS x Udacity's Mach
 **4. `Screenshot-of-Working-Step-Function.PNG`:** screen capture of working step function. <br><br>
 **5. `step-function.json`:** Step Function exported to JSON<br><br>
 
-### Dependencies
+### 2.2. Dependencies
 ```
 Python 3 (Data Science) - v3.7.10 kernel
 ml.t3.medium instance
 Python 3.8 runtime for the AWS Lambda Functions
 ```
 
-### Installation
+### 2.3. Installation
 
 For local development, you will need to setup a jupyter lab instance.
 * Follow the [jupyter install](https://jupyter.org/install.html) link for best practices to install and start a jupyter lab instance.
@@ -36,10 +36,11 @@ pip install jupyterlab
 ```
 * There are also docker containers containing jupyter lab from [Jupyter Docker Stacks](https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html).
 
-## Scones Unlimited
+## Scones Unlimited, a scone-delivery-focused logistic company
 
 The project aims to develop an image classification Machine Learning Model using workflows on Amazon SageMaker, automating various Machine Learning tasks such as Data Preparation, Model Training, Deployment, and Inference with the help of AWS Step Functions and Lambda functions.
 
+Difference AWS Lambda functions draft to build a AWS Step Functions Workflow:<br>
 1. The `serializeImageData` Lambda Function ([zipped script](Lambda%20functions%20-%20python%20scripts/Lambda-1-serializeImageData-code.zip)) takes the address of an image hosted in S3, and returns a serialized JSON object.<br>
 2. The `Image-Classification` Lambda Function ([zipped script](Lambda%20functions%20-%20python%20scripts/Lambda-2-Image-Classification-code.zip)) accepts the JSON object obtained from step 1 and sends it to an endpoint, collecting inferences as a JSON object.<br>
 3. The `Filter Low Confidence Inferences` Lambda Function ([zipped script](Lambda%20functions%20-%20python%20scripts/Lambda-3-Filter-Low-Confidence-Inferences-code.zip)) takes the inference data from step 2, and filters only the images that meet the pre-defined threshold.<br>
@@ -55,6 +56,7 @@ The project aims to develop an image classification Machine Learning Model using
 
 ## License
 [License](LICENSE)
+
 
 
 Thank you for taking the time to visit this repository!
